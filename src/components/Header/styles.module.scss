@@ -1,0 +1,168 @@
+@import "../../styles/_variables.scss";
+/* estilo do header na home */
+
+
+
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background: transparent;
+    /* background: $first-color; */
+    padding-top: $mb-0-5;
+}
+.scroll-header{
+    background-color: $first-color;
+}
+.scroll-header a:hover{
+    color: $text-color;
+}
+.imgLogo{
+    width: 150px;
+}
+.nav__item a{
+    color: $text-color;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav__item a::before{
+    content: '';
+    position: absolute;
+    background: $text-color;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.nav__item a:hover::before{
+
+    width: 100%;
+}
+@media screen and (max-width:1220px){
+    .nav__logo{
+        margin-left: 1rem;
+    }
+    .nav__menu{
+        margin-right: 1rem;
+    }
+}
+
+.nav{
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav__logo{
+    display: flex;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2.5rem;
+}
+
+.nav__close,
+.nav__toggle{
+    display: none;
+}
+
+/* MENU MOBIELE */
+
+@media screen  and (max-width:700px) {
+    .nav__menu{
+        position: fixed;
+        background-color: $first-color;
+        border-radius: 0  0 15px 15px;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: .5s;
+    }
+    .section{
+        padding: 2rem 1rem 5rem 1rem;;
+    }
+    .nav__toggle{
+        display: block;
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+        color: $first-color;
+        cursor: pointer;
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    
+    .nav__close{
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        top: 1rem;
+        right: 1rem;
+        color: $first-color;
+        cursor: pointer;
+    }
+    .nav__item a {
+        font-size: 18px;
+    }
+    .home__container{
+        margin-top: 150px;
+    }
+}
+.showMenu{
+    top: 0;
+}
+
+
+.nav__link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $text-color;
+    font-size: $small-font-size;
+    font-weight: 400;
+}
+
+.nav__close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    color: $text-color;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: $btn-call;
+    padding: 10px 43px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: $first-color;
+    }
+    .btn__budget{
+        color: $second-color;
+        font-weight: 700;
+    }
+}
+.btn__segundo{
+    background-color: transparent;
+    padding: 10px 43px;
+    border: 1px solid $btn-call;
+    border-radius: 8px;
+    .btn__client{
+        color: $btn-call;
+        font-weight: 700;
+    }
+}

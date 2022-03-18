@@ -1,0 +1,89 @@
+@import "./variables";
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  strong {
+    color: inherit;
+  }
+  body {
+    font-family: $body-font;
+    font: 400 1rem;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button,
+  input {
+    border: none;
+    outline: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  p {
+    line-height: 150%;
+  }
+
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%; //Converter o tamanho da font px 15
+    }
+  }
+  @media (max-width: 760px) {
+    html {
+      font-size: 87.5%; //Converter o tamanho da font px 14
+    }
+  }
+
+  .section {
+    padding: 6rem 1rem;
+  }
+
+  @media (max-width: 412px){
+    .section {
+      padding: 4rem 1rem;
+    }
+  } 
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BARRA DE ROLAGEM SITE */
+
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: $first-color;
+   
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: $second-color;
+    border-radius: .2rem;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: $first-color;
+    cursor: pointer;
+  }
+
+
