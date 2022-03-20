@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     z-index: $z-fixed;
-    background: transparent;
+    background: $second-color;
     /* background: $first-color; */
     padding-top: $mb-0-5;
 }
@@ -80,7 +80,7 @@
 @media screen  and (max-width:700px) {
     .nav__menu{
         position: fixed;
-        background-color: #DEE2E6;
+        background-color: #fff;
         border-radius: 0  0 15px 15px;
         top: -100%;
         left: 0;
@@ -161,6 +161,7 @@
     padding: 10px 43px;
     border: 1px solid $btn-call;
     border-radius: 8px;
+    cursor: pointer;
     .btn__client{
         color: $btn-call;
         font-weight: 700;

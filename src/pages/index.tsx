@@ -1,8 +1,60 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
+
+  const gridYou= [
+    {
+      icon:"",
+      text: "Seguro de Vida"
+    },
+    {
+      icon:"",
+      text: "Seguro Viagem"
+    },
+    {
+      icon:"",
+      text: "Seguro Fiança"
+    },
+    {
+      icon:"",
+      text: "Consorcio"
+    },
+    {
+      icon:"",
+      text: "Plano Saúde Pet"
+    },
+    {
+      icon:"",
+      text: "Seguro Automóvel"
+    },
+    {
+      icon:"",
+      text: "Seguro Residencial"
+    },
+    {
+      icon:"",
+      text: "Plano de Saúde e Odonto"
+    },
+    {
+      icon:"",
+      text: "Previdencia Privada"
+    },
+    {
+      icon:"",
+      text: "Seguro Resgatável"
+    },
+    {
+      icon:"",
+      text: "Seguro de responsabilidade civil"
+    },
+    {
+      icon:"",
+      text: "Seguro equipamentos portáteis"
+    },
+  ]
   return (
     <>
        <Head>
@@ -23,12 +75,16 @@ export default function Home() {
                 realmente importa e para seu patrimônio.
               </p>
               <div className={`${styles.buttons} ${styles.active}`}>
-                <div className={styles.btn}>
-                  <a className={styles.btn__budget}>Para você</a>
-                </div>
-                <div className={styles.btn__segundo}>
-                  <a className={styles.btn__client}>Para sua Empresa</a>
-                </div>
+                <Link href="#you">
+                  <div className={styles.btn}>
+                      <a className={styles.btn__budget}>Para você</a>
+                  </div>
+                </Link>
+                <Link href="#company">
+                  <div className={styles.btn__segundo}>
+                    <a className={styles.btn__client}>Para sua Empresa</a>
+                  </div>
+                </Link>
               </div>
           </div>
           <div className={styles.home__img}>
@@ -40,15 +96,34 @@ export default function Home() {
             className={styles.img__home}
             />
             <div className={`${styles.buttons} ${styles.disable}`}>
-                <div className={styles.btn}>
-                  <a className={styles.btn__budget}>Para você</a>
-                </div>
-                <div className={styles.btn__segundo}>
-                  <a className={styles.btn__client}>Para sua Empresa</a>
-                </div>
+                <Link href="#you">
+                  <div className={styles.btn}>
+                      <a className={styles.btn__budget}>Para você</a>
+                  </div>
+                </Link>
+
+                <Link href="#company">
+                  <div className={styles.btn__segundo}>
+                    <a className={styles.btn__client}>Para sua Empresa</a>
+                  </div>
+                </Link>
               </div>
           </div>
         </div>
+        </section>
+        <section className={`${styles.you} section`} id="you">
+          <div className={`${styles.you__container} container`}>
+            <div className={styles.you__data}>
+              <div className={styles.you__header}>
+                <h3 className={styles.you__tile}> Para você:</h3>
+                <p className={styles.you__tile}> 
+                  Proteção para você, sua família, patrimônio
+                  e invetimentos, confira todos os serviços:
+                </p>
+              </div>
+
+            </div>
+          </div>
         </section>
       </main>
     </>
