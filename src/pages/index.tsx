@@ -55,6 +55,52 @@ export default function Home() {
       text: "Seguro equipamentos portáteis"
     },
   ]
+  const gridCompany= [
+    {
+      icon:"/images/vidagrupo.svg",
+      text: "Seguro de Vida em Grupo"
+    },
+    {
+      icon:"/images/odonto.svg",
+      text: "Plano de Saúde e Odonto"
+    },
+    {
+      icon:"/images/condominio.svg",
+      text: "Condomínio"
+    },
+    {
+      icon:"/images/veiculos.svg",
+      text: "Seguro Veículos"
+    },
+    {
+      icon:"/images/garantia.svg",
+      text: "Seguro Garantia"
+    },
+    {
+      icon:"/images/engenharia.svg",
+      text: "Riscos de Engenharia"
+    },
+    {
+      icon:"/images/frotas.svg",
+      text: "Seguro Frota Veículos"
+    },
+    {
+      icon:"/images/complementar.svg",
+      text: "Previdencia Complementar"
+    },
+    {
+      icon:"/images/diretores.svg",
+      text: "Seguro Diretores & Oficiais"
+    },
+    {
+      icon:"/images/patrimonial.svg",
+      text: "Seguro Patrimonial Empresárial"
+    },
+    {
+      icon:"/images/terceiros.svg",
+      text: "Seguro de responsabilidade civil"
+    },
+  ]
   return (
     <>
        <Head>
@@ -160,6 +206,57 @@ export default function Home() {
                 </Link>
               </div>
               </div>
+          </div>
+        </section>
+        <section className={`${styles.company} section`} id="company">
+          <div className={`${styles.company__container} container`}>
+            <div className={styles.company__img}>
+                <Image
+                  src="/images/empresarial.webp"
+                  alt="Icone beneficios"
+                  width="500"
+                  height="409"
+                  className={styles.icon__company}
+                />
+
+                <div className={`${styles.disable}`}>
+                  <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                    <a target="_blank" className={styles.btn__budget}>Orçamento</a>
+                  </Link>
+                </div>
+              </div>
+            <div className={styles.company__data}>
+              <div className={styles.company__header}>
+                <h3 className={styles.company__title}> Para sua empresa:</h3>
+                <p className={styles.company__subtitle}> 
+                  Proteção completa para sua empresa, com a Neoset você pode mais, 
+                  confira nossos serviços:
+                </p>
+              </div>
+                <div className={styles.company__grid}>
+                  {gridCompany.map((item:any) =>(
+                    <div className={styles.company__card} key={item.icon}>
+                      <div className={styles.company__icon}>
+                        <Image
+                          src={item.icon}
+                          alt="Icone beneficios"
+                          width="35"
+                          height="35"
+                          className={styles.icon__company}
+                        />
+                      </div>
+                      <div className={styles.company__description}>
+                        <p className={styles.company__text}>
+                          {item.text}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Orçamento</a>
+                </Link>
+            </div>
           </div>
         </section>
       </main>
