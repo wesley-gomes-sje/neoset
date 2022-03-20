@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import {Contact} from '../components/Contact';
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -349,6 +350,7 @@ export default function Home() {
                 </div>    
           </div>
         </section>
+        <Contact/>
         
       </main>
     </>

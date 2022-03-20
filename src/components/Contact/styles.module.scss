@@ -1,0 +1,85 @@
+@import "../../styles/_variables.scss";
+
+.contact{
+    background-color: $grey-color;
+
+    .contact__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        max-width: 1024px;
+        align-items: center;
+
+        @media (max-width: 768px){
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .contact__img{
+            width: 100%;
+            max-width: 430px;
+
+            @media (max-width: 768px){
+                display: none;
+            }
+        }
+
+        .contact__form{
+            background-color: $first-color;
+            padding: 1.5rem;
+            border-radius: 12px;
+            .form{
+                display: flex;
+                flex-direction: column;
+     
+                .group__form{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: $mb-1-5;
+                    .form__title{
+                        color: $second-color;
+                        font-size: $h2-font-size;
+                    }
+     
+                 .label{
+                    margin-bottom: $mb-0-5;
+                    color: $second-color;
+                 }
+                 .input{
+                     background-color: $second-color;
+                     padding: 1rem;
+                     border-radius: 8px;
+                 }
+                 .textarea{
+                     padding: 1rem;
+                     background-color: $second-color;
+                     outline: 0;
+                     border-style: none;
+                     font-family: $body-font;
+                     border-radius: 8px;
+                 }
+                }
+            }
+     
+              .btn__send{
+                 display: inline-flex;
+                 width: 100%;
+                 justify-content: center;
+                 align-items: center;
+                 background-color: $second-color;
+                 padding: 1rem 2rem;
+                 gap: 10px;
+                 font-size: $basic-font-size;
+                 font-weight: 800;
+                 color: $first-color !important;
+                 border-radius: 8px;
+    
+                &:hover{
+                 
+                 background-color: $btn-call;
+                 color: $second-color !important;
+             }
+             }
+         }
+     }
+    
+    }
