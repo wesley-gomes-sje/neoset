@@ -11,11 +11,12 @@ export function Contact(){
         const data = new FormData(event.target);
       
         const userName = data.get('name');
+        const userPhone = data.get('telefone');
         const userEmail = data.get('email');
         const userAssunto = data.get('assunto');
         const userMensagem = data.get('mensagem');
 
-        fetch("https://novo-site-kpg.vercel.app//api/contact", {
+        fetch("http://localhost:3000/api/contato", {
             method: "POST",
             headers: {
                 Accept: "application/json, text/plain, */*",
@@ -23,6 +24,7 @@ export function Contact(){
             },
             body: JSON.stringify({
                 nome: userName,
+                phone: userPhone,
                 email: userEmail,
                 assunto:userAssunto,
                 mensagem: userMensagem,
@@ -77,7 +79,7 @@ export function Contact(){
                                 <input  className={styles.input} type="text" id='name' name='name' placeholder=' Digite seu nome' required/>
                             </div>
                             <div className={styles.group__form}>
-                                <label htmlFor="email"  className={styles.label}>Telefone</label>
+                                <label htmlFor="telefone"  className={styles.label}>Telefone</label>
                                 <input  className={styles.input} type="number" id='telefone' name='telefone' placeholder='Insira seu telefone com DDD' required/>
                             </div>
                             <div className={styles.group__form}>
