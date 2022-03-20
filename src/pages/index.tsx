@@ -7,51 +7,51 @@ export default function Home() {
 
   const gridYou= [
     {
-      icon:"",
+      icon:"/images/iconecoracao.svg",
       text: "Seguro de Vida"
     },
     {
-      icon:"",
+      icon:"/images/aviao.svg",
       text: "Seguro Viagem"
     },
     {
-      icon:"",
+      icon:"/images/consorcio.svg",
       text: "Seguro Fiança"
     },
     {
-      icon:"",
+      icon:"/images/money.svg",
       text: "Consorcio"
     },
     {
-      icon:"",
+      icon:"/images/pet.svg",
       text: "Plano Saúde Pet"
     },
     {
-      icon:"",
+      icon:"/images/carro.svg",
       text: "Seguro Automóvel"
     },
     {
-      icon:"",
+      icon:"/images/casa.svg",
       text: "Seguro Residencial"
     },
     {
-      icon:"",
+      icon:"/images/medico.svg",
       text: "Plano de Saúde e Odonto"
     },
     {
-      icon:"",
+      icon:"/images/idoso.svg",
       text: "Previdencia Privada"
     },
     {
-      icon:"",
+      icon:"/images/emprestimo.svg",
       text: "Seguro Resgatável"
     },
     {
-      icon:"",
+      icon:"/images/danos.svg",
       text: "Seguro de responsabilidade civil"
     },
     {
-      icon:"",
+      icon:"/images/celular.svg",
       text: "Seguro equipamentos portáteis"
     },
   ]
@@ -104,7 +104,7 @@ export default function Home() {
 
                 <Link href="#company">
                   <div className={styles.btn__segundo}>
-                    <a className={styles.btn__client}>Para sua Empresa</a>
+                    <a>Para sua Empresa</a>
                   </div>
                 </Link>
               </div>
@@ -115,14 +115,51 @@ export default function Home() {
           <div className={`${styles.you__container} container`}>
             <div className={styles.you__data}>
               <div className={styles.you__header}>
-                <h3 className={styles.you__tile}> Para você:</h3>
-                <p className={styles.you__tile}> 
+                <h3 className={styles.you__title}> Para você:</h3>
+                <p className={styles.you__subtitle}> 
                   Proteção para você, sua família, patrimônio
-                  e invetimentos, confira todos os serviços:
+                  e investimentos, confira todos os serviços:
                 </p>
               </div>
-
+                <div className={styles.you__grid}>
+                  {gridYou.map((item:any) =>(
+                    <div className={styles.you__card} key={item.icon}>
+                      <div className={styles.you__icon}>
+                        <Image
+                          src={item.icon}
+                          alt="Icone beneficios"
+                          width="35"
+                          height="35"
+                          className={styles.icon__you}
+                        />
+                      </div>
+                      <div className={styles.you__description}>
+                        <p className={styles.you__text}>
+                          {item.text}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Orçamento</a>
+                </Link>
             </div>
+            <div className={styles.you__img}>
+                <Image
+                  src="/images/familia.webp"
+                  alt="Icone beneficios"
+                  width="500"
+                  height="409"
+                  className={styles.icon__you}
+                />
+
+              <div className={`${styles.disable}`}>
+                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                  <a target="_blank" className={styles.btn__budget}>Orçamento</a>
+                </Link>
+              </div>
+              </div>
           </div>
         </section>
       </main>

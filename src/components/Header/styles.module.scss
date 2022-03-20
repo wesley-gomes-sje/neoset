@@ -162,8 +162,10 @@
     border: 1px solid $btn-call;
     border-radius: 8px;
     cursor: pointer;
-    .btn__client{
-        color: $btn-call;
-        font-weight: 700;
+    color: $btn-call;
+    font-weight: 700;
+    &:hover{
+        background-color: $btn-call;
+        color: $second-color;
     }
 }

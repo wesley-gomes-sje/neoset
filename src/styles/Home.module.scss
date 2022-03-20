@@ -66,13 +66,94 @@
             border: 1px solid $btn-call;
             border-radius: 8px;
             cursor: pointer;
-            .btn__client{
-                color: $btn-call;
-                font-weight: 700;
+            color: $btn-call;
+            font-weight: 700;
+            &:hover{
+                background-color: $btn-call;
+                color: $second-color;
             }
-            
         }
     } 
+    .active{
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+    .disable{
+        display: none;
+        @media(max-width: 768px){
+            margin-top: $mb-1-5;
+            display: inline-flex;
+        }
+    }
+}
+
+/* Seção pra você */
+
+.you{
+    background-color: $grey-color;
+
+    .you__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        align-items: center;
+
+        @media(max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .you__header{
+        margin-bottom: $mb-3-5;
+        max-width: 450px;
+        @media (max-width: 768px){
+            max-width: 100%;
+        }
+        .you__title{
+            font-size: $h2-font-size;
+            margin-bottom: $mb-1;
+        }
+        .you__subtitle{
+            font-size: $basic-font-size;
+        }
+    }
+    .you__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: $mb-2;
+
+        @media (max-width: 768px){
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+        }
+        @media (max-width: 425px){
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        .you__card{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: $mb-0-5;
+        }
+    }
+    .btn__budget{
+        background-color: $btn-call;
+        padding: 10px 43px;
+        border-radius: 8px;
+        color: $second-color;
+            font-weight: 700;
+        cursor: pointer;
+        &:hover{
+            background-color: $first-color;
+        }
+    }
+
     .active{
         @media(max-width: 768px){
             display: none;

@@ -74,15 +74,15 @@ html {
 
 ::-webkit-scrollbar{
     width: .60rem;
-    background-color: $first-color;
+    background-color: $second-color;
    
   }
   ::-webkit-scrollbar-thumb{
-    background-color: $second-color;
+    background-color: $first-color;
     border-radius: .2rem;
   }
   ::-webkit-scrollbar-thumb:hover{
-    background-color: $first-color;
+    background-color: $btn-call;
     cursor: pointer;
   }
 

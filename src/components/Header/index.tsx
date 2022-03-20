@@ -49,10 +49,12 @@ export function Header(){
                                 </Link>
                             </li>
                             <div className={styles.btn}>
-                                <a className={styles.btn__budget}>Orçamento</a>
+                                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+planos+Neoset.&app_absent=0">
+                                    <a className={styles.btn__budget} target="_blank">Orçamento</a>
+                                </Link>
                             </div>
                             <div className={styles.btn__segundo}>
-                                <a className={styles.btn__client}>Sou Cliente</a>
+                                <a >Sou Cliente</a>
                             </div>
                         </ul>
                         <div className={styles.nav__close} id="nav-close">
