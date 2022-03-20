@@ -199,7 +199,6 @@ export default function Home() {
                   height="409"
                   className={styles.icon__you}
                 />
-
               <div className={`${styles.disable}`}>
                 <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
                   <a target="_blank" className={styles.btn__budget}>Orçamento</a>
@@ -257,6 +256,50 @@ export default function Home() {
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Orçamento</a>
                 </Link>
             </div>
+          </div>
+        </section>
+        <section className={`${styles.about} section`} id="about">
+          <div className={`${styles.about__container} container`}>
+            <div className={styles.about__data}>
+              <div className={styles.about__header}>
+                <h3 className={styles.about__title}> Sobre Nós</h3>
+                <p className={styles.about__subtitle}> 
+                A Neoset Corretora de Seguros nasce com mais de 25 anos de experiência no mercado segurador. O 
+                conhecimento técnico acumulado serve de base para o atendimento diferenciado e consultivo onde em 
+                conjunto com nossos clientes trabalhamos para desenhar soluções inovadoras e especificas e assim 
+                garantir a tranquilidade dos nossos clientes.
+                </p>
+              </div>
+                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Saiba Mais</a>
+                </Link>
+                <div className={styles.about__stars}>
+                  <Image
+                    src="/images/stars.svg"
+                    alt="Icone beneficios"
+                    width="110"
+                    height="19"
+                    className={styles.icon__about}
+                  />
+                  <p className={styles.about__p}>
+                    Recomendado por +3 Mil clientes
+                  </p>
+                </div>
+            </div>
+            <div className={styles.about__img}>
+                <Image
+                  src="/images/sobre.webp"
+                  alt="Icone beneficios"
+                  width="500"
+                  height="409"
+                  className={styles.icon__about}
+                />
+              <div className={`${styles.disable}`}>
+              <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                  <a target="_blank" className={styles.btn__budget}>Saiba Mais</a>
+                </Link>
+              </div>
+              </div>
           </div>
         </section>
       </main>

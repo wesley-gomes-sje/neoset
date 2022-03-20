@@ -34,7 +34,7 @@ export function Header(){
                                 </Link>
                             </li>
                             <li className={styles.nav__item}>
-                                <Link href="#services">
+                                <Link href="#you">
                                     <a className={styles.nav__link}>Serviços</a>
                                 </Link>
                             </li>
