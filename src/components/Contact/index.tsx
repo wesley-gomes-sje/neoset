@@ -78,7 +78,7 @@ export function Contact(){
                             </div>
                             <div className={styles.group__form}>
                                 <label htmlFor="email"  className={styles.label}>Telefone</label>
-                                <input  className={styles.input} type="text" id='telefone' name='telefone' placeholder='Insira seu telefone com DDD' required/>
+                                <input  className={styles.input} type="number" id='telefone' name='telefone' placeholder='Insira seu telefone com DDD' required/>
                             </div>
                             <div className={styles.group__form}>
                                 <label htmlFor="email"  className={styles.label}>Email</label>
