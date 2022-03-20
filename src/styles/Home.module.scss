@@ -1,0 +1,87 @@
+/* Seção Home */
+@import "./variables";
+.home{
+    .home__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 5rem;
+        gap: 3rem;
+        align-items: center;
+
+        @media(max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home__data{
+            .home__title__top{
+                background-color: $first-color;
+                padding: .5rem 1rem;
+                border-radius: 50px;
+                color: $second-color;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            .home__title{
+                margin-top: $mb-2;
+                font-size: $h1-font-size;
+                line-height: 80px;
+                margin-bottom: $mb-1;
+                @media(max-width: 768px){
+                    margin-top: $mb-1-5;
+                    line-height: 60px;
+                }
+            }
+            .home__subtitle{
+                font-size: $basic-font-size;
+                margin-bottom: $mb-1;
+            } 
+            
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+
+        .btn{
+            background-color: $btn-call;
+            padding: 10px 43px;
+            border-radius: 8px;
+            cursor: pointer;
+            &:hover{
+                background-color: $first-color;
+            }
+            .btn__budget{
+                color: $second-color;
+                font-weight: 700;
+            }
+        }
+        .btn__segundo{
+            background-color: transparent;
+            padding: 10px 43px;
+            border: 1px solid $btn-call;
+            border-radius: 8px;
+            .btn__client{
+                color: $btn-call;
+                font-weight: 700;
+            }
+            
+        }
+    } 
+    .active{
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+    .disable{
+        display: none;
+        @media(max-width: 768px){
+            margin-top: $mb-1-5;
+            display: inline-flex;
+        }
+    }
+}

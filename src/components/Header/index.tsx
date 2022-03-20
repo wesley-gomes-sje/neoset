@@ -40,7 +40,7 @@ export function Header(){
                             </li>
                             <li className={styles.nav__item}>
                                 <Link href="#about">
-                                    <a className={styles.nav__link}>Quem Somos</a>
+                                    <a className={styles.nav__link}>Sobre</a>
                                 </Link>
                             </li>
                             <li className={styles.nav__item}>
