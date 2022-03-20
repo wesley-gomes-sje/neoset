@@ -101,6 +101,23 @@ export default function Home() {
       text: "Seguro de responsabilidade civil"
     },
   ]
+  const gridPillars = [
+    {
+      icon:"/images/missao.svg",
+      text:"MISSÃO",
+      legend: "Nossa missão é oferecer uma efetiva consultoria em  seguros, transformando o relacionamento com nossos clientes em momentos de confiança e segurança, sempre com um atendimento personalizado."
+    },
+    {
+      icon:"/images/visao.svg",
+      text:"VISÃO",
+      legend: "Ser referência no mercado de seguros como a melhor, mais eficiente e confiável corretora de seguros na visão dos clientes e seguradoras."
+    },
+    {
+      icon:"/images/valores.svg",
+      text:"VALORES",
+      legend: "Trabalhamos com Honestidade, Transparência, Ética, Comprometimento e Responsabilidade."
+    },
+  ]
   return (
     <>
        <Head>
@@ -302,6 +319,37 @@ export default function Home() {
               </div>
           </div>
         </section>
+        <section className={`${styles.pillars} section`} id="pillars">
+          <div className={`${styles.pillars__container} container`}>
+              <div className={styles.pillars__header}>
+                    <h3 className={styles.pillars__title}>Nossos Pilares</h3>
+                    <div className={styles.pillars__line}></div>
+                    <p className={styles.pillars__subtitle}>Uma empresa com principios e compromisso com sua proteção</p>
+              </div>
+                <div className={styles.pillars__grid}>
+                    {gridPillars.map((item:any) =>(
+                      <div className={styles.pillars__card} key={item.icon}>
+                        <div className={styles.pillars__icon}>
+                          <Image
+                            src={item.icon}
+                            alt="Icone beneficios"
+                            width="45"
+                            height="45"
+                            className={styles.icon__about}
+                          />
+                        </div>
+                          <h3 className={styles.pillars__card__title}>
+                            {item.text}
+                          </h3>
+                          <p className={styles.pillars__card__subtitle}>
+                            {item.legend}
+                          </p>
+                      </div>
+                    ))}
+                </div>    
+          </div>
+        </section>
+        
       </main>
     </>
   )
