@@ -4,18 +4,22 @@
     background-color: $grey-color;
 
     .contact__container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        /* display: grid;
+        grid-template-columns: repeat(3,1fr); */
+        display: flex;
         align-items: center;
+        gap: 1rem;
         
 
         @media (max-width: 768px){
+            display: grid;
             grid-template-columns: repeat(1,1fr);
+            
         }
 
         .contact__img{
-            width: 100%;
-            max-width: 230px;
+            /* width: 100%; */
+            
 
             @media (max-width: 768px){
                 display: none;
@@ -23,6 +27,10 @@
         }
 
         .contact__texto{
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
             @media(max-width: 768px){
                text-align: center;
                 
