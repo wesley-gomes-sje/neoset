@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import styles from './styles.module.scss';
 import swal from 'sweetalert';
+import { RiWhatsappLine } from "react-icons/ri";
 export function Contact(){
 
     function formCad(event) {
@@ -62,10 +63,21 @@ export function Contact(){
                         <Image
                             src="/images/celularContact.webp"
                             alt="Icone beneficios"
-                            width="312"
-                            height="630"
+                            width={280}
+                            height={600}
                             className={styles.icon__about}
                         />
+                    </div>
+                    <div className={styles.contact__texto}>
+                        <h1 className={styles.calltoaction}>
+                            “Entre em contato a Neoset através do botão WhatsApp 
+                            abaixo ou mande uma mensagem que retornaremos o mais breve possível”
+                        </h1>
+                        <div className={`${styles.zap}`}>
+                            <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                                <a target="_blank" className={styles.btn__whatsapp}> <RiWhatsappLine size={25}/> Saiba Mais</a>
+                            </Link>
+                        </div>
                     </div>
                     <div className={styles.contact__form}>
                         <form onSubmit={formCad}  className={styles.form}>

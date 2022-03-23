@@ -5,10 +5,9 @@
 
     .contact__container{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-        max-width: 1024px;
+        grid-template-columns: repeat(3,1fr);
         align-items: center;
+        
 
         @media (max-width: 768px){
             grid-template-columns: repeat(1,1fr);
@@ -16,11 +15,41 @@
 
         .contact__img{
             width: 100%;
-            max-width: 430px;
+            max-width: 230px;
 
             @media (max-width: 768px){
                 display: none;
             }
+        }
+
+        .contact__texto{
+            @media(max-width: 768px){
+               text-align: center;
+                
+            }
+            .zap{
+                display: flex;
+                justify-content: center;
+                .btn__whatsapp{
+                    display: flex;
+                    background-color:#25D366 ;
+                    padding: .75rem 2rem;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 16px;
+                    color: $second-color;
+                    border-radius: 8px;
+                    font-weight: 700;
+                    margin-top: 2rem;
+                    @media(max-width: 768px){
+                        margin-bottom: 2rem;
+                        
+                    }
+                    
+                    
+                }
+            }
+            
         }
 
         .contact__form{
