@@ -12,9 +12,6 @@
     /* background: $second-color; */
      background: $first-color;
     padding-top: $mb-0-5;
-    @media(max-width: 412px){
-        margin-bottom: 5rem;
-    }
 }
 .scroll-header{
     background-color: $first-color;

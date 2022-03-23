@@ -209,7 +209,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
@@ -222,7 +222,7 @@ export default function Home() {
                   className={styles.icon__you}
                 />
               <div className={`${styles.disable}`}>
-                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
                   <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                 </Link>
               </div>
@@ -241,7 +241,7 @@ export default function Home() {
                 />
 
                 <div className={`${styles.disable}`}>
-                  <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                  <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
                     <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                   </Link>
                 </div>
@@ -274,7 +274,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
@@ -293,7 +293,7 @@ export default function Home() {
                   e assim garantir a tranquilidade dos nossos clientes.
                 </p>
               </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Saiba Mais</a>
                 </Link>
                 <div className={styles.about__stars}>
@@ -318,7 +318,7 @@ export default function Home() {
                   className={styles.icon__about}
                 />
               <div className={`${styles.disable}`}>
-              <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+              <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
                   <a target="_blank" className={styles.btn__budget}>Saiba Mais</a>
                 </Link>
               </div>

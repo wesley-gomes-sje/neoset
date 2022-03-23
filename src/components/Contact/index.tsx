@@ -74,7 +74,7 @@ export function Contact(){
                             abaixo ou mande uma mensagem que retornaremos o mais breve possível”
                         </h1>
                         <div className={`${styles.zap}`}>
-                            <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                            <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
                                 <a target="_blank" className={styles.btn__whatsapp}> <RiWhatsappLine size={25}/> Saiba Mais</a>
                             </Link>
                         </div>
