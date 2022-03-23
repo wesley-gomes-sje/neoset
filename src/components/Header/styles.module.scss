@@ -9,9 +9,12 @@
     top: 0;
     left: 0;
     z-index: $z-fixed;
-    background: $second-color;
-    /* background: $first-color; */
+    /* background: $second-color; */
+     background: $first-color;
     padding-top: $mb-0-5;
+    @media(max-width: 412px){
+        margin-bottom: 5rem;
+    }
 }
 .scroll-header{
     background-color: $first-color;
@@ -23,7 +26,8 @@
     width: 150px;
 }
 .nav__item a{
-    color: $text-color;
+    color: $second-color;
+    font-size: 16px;
     position: relative;
     transition: 0.3s ease;
 }
@@ -31,7 +35,7 @@
 .nav__item a::before{
     content: '';
     position: absolute;
-    background: $text-color;
+    background: $second-color;
     width: 0;
     height: 1px;
     bottom: 0;
@@ -80,7 +84,7 @@
 @media screen  and (max-width:700px) {
     .nav__menu{
         position: fixed;
-        background-color: #fff;
+        background-color: $first-color;
         border-radius: 0  0 15px 15px;
         top: -100%;
         left: 0;
@@ -95,7 +99,7 @@
         display: block;
         margin-right: 1.5rem;
         font-size: 1.5rem;
-        color: $first-color;
+        color: $second-color;
         cursor: pointer;
     }
     .nav__list{
@@ -110,7 +114,7 @@
         font-size: 1.5rem;
         top: 1rem;
         right: 1rem;
-        color: $first-color;
+        color: $second-color;
         cursor: pointer;
     }
     .nav__item a {
@@ -143,29 +147,16 @@
     cursor: pointer;
 }
 
-.btn{
-    background-color: $btn-call;
-    padding: 10px 43px;
-    border-radius: 8px;
-    cursor: pointer;
-    &:hover{
-        background-color: $first-color;
-    }
-    .btn__budget{
-        color: $second-color;
-        font-weight: 700;
-    }
+.btns{
+    display: flex;
+    gap: 2rem;
 }
-.btn__segundo{
-    background-color: transparent;
-    padding: 10px 43px;
-    border: 1px solid $btn-call;
-    border-radius: 8px;
+
+
+.btn{
     cursor: pointer;
-    color: $btn-call;
-    font-weight: 700;
+    transition: .3s;
     &:hover{
-        background-color: $btn-call;
-        color: $second-color;
+        transform: scale(1.2);
     }
 }

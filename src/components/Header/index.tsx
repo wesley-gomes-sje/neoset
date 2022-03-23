@@ -17,10 +17,10 @@ export function Header(){
                     <Link href="/">
                         <a className={styles.nav__logo}>
                            <Image
-                            src="/images/logo.svg"
+                            src="/images/logoBranca.svg"
                             alt="Logo empresa"
-                            width={150}
-                            height={63}
+                            width={180}
+                            height={130}
                            >
 
                            </Image>
@@ -48,13 +48,27 @@ export function Header(){
                                     <a className={styles.nav__link}>Contato</a>
                                 </Link>
                             </li>
-                            <div className={styles.btn}>
-                                <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+planos+Neoset.&app_absent=0">
-                                    <a className={styles.btn__budget} target="_blank">Orçamento</a>
-                                </Link>
-                            </div>
-                            <div className={styles.btn__segundo}>
-                                <a >Sou Cliente</a>
+                            <div className={styles.btns}>
+                                <div className={styles.btn}>
+                                    <Link href="https://www.instagram.com/neosetcorretora/">
+                                        <Image
+                                            src="/images/instagram.svg"
+                                            alt="Logo empresa"
+                                            width={40}
+                                            height={40}
+                                        />
+                                    </Link>
+                                </div>
+                                <div className={styles.btn}>
+                                    <Link href="https://www.facebook.com/neosetcorretora/" >
+                                        <Image
+                                            src="/images/facebook.svg"
+                                            alt="Logo empresa"
+                                            width={40}
+                                            height={40}
+                                        />
+                                      </Link>  
+                                </div>
                             </div>
                         </ul>
                         <div className={styles.nav__close} id="nav-close">

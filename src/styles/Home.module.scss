@@ -15,6 +15,9 @@
             align-items: center;
             text-align: center;
         }
+        @media(max-width: 412px){
+            padding-top: 2rem;
+        }
 
         .home__data{
             .home__title__top{
@@ -94,13 +97,13 @@
     background-color: $grey-color;
 
     .you__container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
+        display: flex;
+      /*   grid-template-columns: repeat(2,1fr); */
+        gap: 2rem;
         align-items: center;
 
         @media(max-width: 768px){
-            display: flex;
+           
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -181,9 +184,10 @@
 .company{
 
     .company__container{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
+        /* display: grid;
+        grid-template-columns: repeat(2,1fr); */
+        display: flex;
+        gap: 2rem;
         align-items: center;
 
         @media(max-width: 768px){

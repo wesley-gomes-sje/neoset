@@ -37,23 +37,27 @@ export default function Home() {
     },
     {
       icon:"/images/medico.svg",
-      text: "Plano de Saúde e Odonto"
+      text: "Plano de Saúde"
+    },
+    {
+      icon:"/images/dente.svg",
+      text: "Plano Odontológico"
     },
     {
       icon:"/images/idoso.svg",
       text: "Previdencia Privada"
     },
-    {
+    /* {
       icon:"/images/emprestimo.svg",
       text: "Seguro Resgatável"
-    },
+    }, */
     {
       icon:"/images/danos.svg",
-      text: "Seguro de responsabilidade civil"
+      text: "Seguro de Responsabilidade Civil"
     },
     {
       icon:"/images/celular.svg",
-      text: "Seguro equipamentos portáteis"
+      text: "Seguro de Equipamentos Portáteis"
     },
   ]
   const gridCompany= [
@@ -71,18 +75,18 @@ export default function Home() {
     },
     {
       icon:"/images/veiculos.svg",
-      text: "Seguro Veículos"
+      text: "Seguro Transporte"
     },
     {
       icon:"/images/garantia.svg",
       text: "Seguro Garantia"
     },
     {
-      icon:"/images/engenharia.svg",
+      icon:"/images/obra.svg",
       text: "Riscos de Engenharia"
     },
     {
-      icon:"/images/frotas.svg",
+      icon:"/images/carro.svg",
       text: "Seguro Frota Veículos"
     },
     {
@@ -91,15 +95,15 @@ export default function Home() {
     },
     {
       icon:"/images/diretores.svg",
-      text: "Seguro Diretores & Oficiais"
+      text: "D&O - Responsabilidade Civil de Gestores."
     },
     {
       icon:"/images/patrimonial.svg",
       text: "Seguro Patrimonial Empresárial"
     },
     {
-      icon:"/images/terceiros.svg",
-      text: "Seguro de responsabilidade civil"
+      icon:"/images/justica.svg",
+      text: "Seguro de Responsabilidade Civil"
     },
   ]
   const gridPillars = [
@@ -135,7 +139,7 @@ export default function Home() {
                 Proteção para <br /> você e sua fámilia
               </h1>
               <p className={styles.home__subtitle}>
-                Com a <strong>Neoset corretora</strong>, você tem proteção completa, para quem 
+                Com a <strong>Neoset Corretora</strong>, você tem proteção completa, para quem 
                 realmente importa e para seu patrimônio.
               </p>
               <div className={`${styles.buttons} ${styles.active}`}>
@@ -206,7 +210,7 @@ export default function Home() {
                   ))}
                 </div>
                 <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
-                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Orçamento</a>
+                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
             <div className={styles.you__img}>
@@ -219,7 +223,7 @@ export default function Home() {
                 />
               <div className={`${styles.disable}`}>
                 <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
-                  <a target="_blank" className={styles.btn__budget}>Orçamento</a>
+                  <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                 </Link>
               </div>
               </div>
@@ -238,7 +242,7 @@ export default function Home() {
 
                 <div className={`${styles.disable}`}>
                   <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
-                    <a target="_blank" className={styles.btn__budget}>Orçamento</a>
+                    <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                   </Link>
                 </div>
               </div>
@@ -271,7 +275,7 @@ export default function Home() {
                   ))}
                 </div>
                 <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
-                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Orçamento</a>
+                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
           </div>
@@ -282,10 +286,11 @@ export default function Home() {
               <div className={styles.about__header}>
                 <h3 className={styles.about__title}> Sobre Nós</h3>
                 <p className={styles.about__subtitle}> 
-                A Neoset Corretora de Seguros nasce com mais de 25 anos de experiência no mercado segurador. O 
-                conhecimento técnico acumulado serve de base para o atendimento diferenciado e consultivo onde em 
-                conjunto com nossos clientes trabalhamos para desenhar soluções inovadoras e especificas e assim 
-                garantir a tranquilidade dos nossos clientes.
+                  A Neoset Corretora de Seguros, nasce com mais de 25 anos de experiência
+                  do <strong>seu sócio</strong> no mercado segurador. O conhecimento técnico acumulado
+                  serve de base para o atendimento diferenciado e consultivo onde em conjunto
+                  com nossos clientes trabalhamos para desenhar soluções inovadoras e especificas
+                  e assim garantir a tranquilidade dos nossos clientes.
                 </p>
               </div>
                 <Link href="https://api.whatsapp.com/send/?phone=5521991122034&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
