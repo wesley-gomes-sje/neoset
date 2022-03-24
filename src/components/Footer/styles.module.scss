@@ -45,6 +45,9 @@
                            align-items: center;
                            gap: .5rem;
                         color: $second-color;
+                        @media (max-width: 630px){
+                            justify-content: center;
+                        }
                        }
                        
                     }
@@ -54,6 +57,9 @@
         }
         .copy{
             display: flex;
+            @media (max-width: 630px){
+                justify-content: center;
+            }
             .copy__text{
                
                 .span{
