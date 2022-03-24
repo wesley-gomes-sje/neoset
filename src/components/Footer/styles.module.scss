@@ -1,0 +1,66 @@
+@import "../../styles/_variables.scss";
+.footer{
+    background: $first-color;
+    padding: 2.5rem 1rem;
+
+    .footer__container{
+        .footer__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (max-width: 630px){
+                flex-direction: column;
+            }
+
+            .footer__logo{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sociais{
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                text-align: center;
+
+                .btn{
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .contact{
+                .contact__title{
+                    color: $second-color;
+                    text-align: center;
+                }
+                .contact__content{
+                    .zap{
+                       margin-bottom: .5rem;
+                       .btn__whatsapp{
+                           display: flex;
+                           align-items: center;
+                           gap: .5rem;
+                        color: $second-color;
+                       }
+                       
+                    }
+                }
+            }
+
+        }
+        .copy{
+            display: flex;
+            .copy__text{
+               
+                .span{
+                    color: $second-color;
+                }
+                
+            }
+        }
+    }
+}
