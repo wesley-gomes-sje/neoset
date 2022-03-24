@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {Contact} from '../components/Contact';
 import styles from "../styles/Home.module.scss";
+import { RiWhatsappLine} from "react-icons/ri";
 
 export default function Home() {
 
@@ -356,6 +357,9 @@ export default function Home() {
           </div>
         </section>
         <Contact/>
+        <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+        <a target="_blank" className={styles.btn__flutante}> <RiWhatsappLine size={55}/></a>
+        </Link>
         
       </main>
     </>
