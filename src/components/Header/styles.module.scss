@@ -11,7 +11,7 @@
     z-index: $z-fixed;
     /* background: $second-color; */
      background: $first-color;
-    padding-top: $mb-0-5;
+    /* padding-top: $mb-0-5; */
 }
 .scroll-header{
     background-color: $first-color;
@@ -54,7 +54,7 @@
 }
 
 .nav{
-    height: $header-height;
+    /* height: $header-height; */
     display: flex;
     justify-content: space-between;
     align-items: center;

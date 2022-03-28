@@ -61,8 +61,8 @@ export function Contact(){
                 <div className={`${styles.contact__container} container`}>
                     <div className={styles.contact__img}>
                         <Image
-                            src="/images/celularContact.webp"
-                            alt="Icone beneficios"
+                            src="/images/mobile.png"
+                            alt="Neoset"
                             width={280}
                             height={600}
                             className={styles.icon__about}
@@ -70,11 +70,11 @@ export function Contact(){
                     </div>
                     <div className={styles.contact__texto}>
                         <h1 className={styles.calltoaction}>
-                            “Entre em contato a Neoset através do botão WhatsApp 
+                            “Entre em contato com  a Neoset através do botão WhatsApp 
                             abaixo ou mande uma mensagem que retornaremos o mais breve possível”
                         </h1>
                         <div className={`${styles.zap}`}>
-                            <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+                            <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Seguros+com+a+Neoset+Corretora.&app_absent=0">
                                 <a target="_blank" className={styles.btn__whatsapp}> <RiWhatsappLine size={25}/> Saiba Mais</a>
                             </Link>
                         </div>

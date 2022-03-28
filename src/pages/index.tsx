@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       icon:"/images/money.svg",
-      text: "Consorcio"
+      text: "Consórcio"
     },
     {
       icon:"/images/pet.svg",
@@ -46,7 +46,7 @@ export default function Home() {
     },
     {
       icon:"/images/idoso.svg",
-      text: "Previdencia Privada"
+      text: "Previdência Privada"
     },
     /* {
       icon:"/images/emprestimo.svg",
@@ -92,7 +92,7 @@ export default function Home() {
     },
     {
       icon:"/images/complementar.svg",
-      text: "Previdencia Complementar"
+      text: "Previdência Complementar"
     },
     {
       icon:"/images/diretores.svg",
@@ -100,7 +100,7 @@ export default function Home() {
     },
     {
       icon:"/images/patrimonial.svg",
-      text: "Seguro Patrimonial Empresárial"
+      text: "Seguro Patrimonial Empresarial"
     },
     {
       icon:"/images/justica.svg",
@@ -137,7 +137,7 @@ export default function Home() {
                 Mais segurança
               </span>
               <h1 className={styles.home__title}>
-                Proteção para <br /> você e sua fámilia
+                Proteção para <br /> você e sua família
               </h1>
               <p className={styles.home__subtitle}>
                 Com a <strong>Neoset Corretora</strong>, você tem proteção completa, para quem 
@@ -210,7 +210,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Seguro+Individual.&app_absent=0">
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
@@ -223,7 +223,7 @@ export default function Home() {
                   className={styles.icon__you}
                 />
               <div className={`${styles.disable}`}>
-                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+família.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Seguro+Individual.&app_absent=0">
                   <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                 </Link>
               </div>
@@ -242,7 +242,7 @@ export default function Home() {
                 />
 
                 <div className={`${styles.disable}`}>
-                  <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                  <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Seguro+Empresarial.&app_absent=0">
                     <a target="_blank" className={styles.btn__budget}>Faça uma Cotação</a>
                   </Link>
                 </div>
@@ -275,7 +275,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Plano+Empresarial.&app_absent=0">
+                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+o+Seguro+Empresarial.&app_absent=0">
                   <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Faça uma Cotação</a>
                 </Link>
             </div>
@@ -289,13 +289,13 @@ export default function Home() {
                 <p className={styles.about__subtitle}> 
                   A Neoset Corretora de Seguros, nasce com mais de 25 anos de experiência
                   do <strong>seu sócio</strong> no mercado segurador. O conhecimento técnico acumulado
-                  serve de base para o atendimento diferenciado e consultivo onde em conjunto
-                  com nossos clientes trabalhamos para desenhar soluções inovadoras e especificas
+                  serve de base para o atendimento diferenciado e consultivo, onde em conjunto
+                  com nossos clientes trabalhamos para desenhar soluções inovadoras e específicas,
                   e assim garantir a tranquilidade dos nossos clientes.
                 </p>
               </div>
-                <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
-                  <a target="_blank"  className={`${styles.btn__budget} ${styles.active}`}>Saiba Mais</a>
+                <Link href="#pillars">
+                  <a  className={`${styles.btn__budget} ${styles.active}`}>Saiba Mais</a>
                 </Link>
                 <div className={styles.about__stars}>
                   <Image
@@ -331,7 +331,7 @@ export default function Home() {
               <div className={styles.pillars__header}>
                     <h3 className={styles.pillars__title}>Nossos Pilares</h3>
                     <div className={styles.pillars__line}></div>
-                    <p className={styles.pillars__subtitle}>Uma empresa com principios e compromisso com sua proteção</p>
+                    <p className={styles.pillars__subtitle}>Uma empresa com princípios e compromisso com sua proteção</p>
               </div>
                 <div className={styles.pillars__grid}>
                     {gridPillars.map((item:any) =>(
@@ -357,7 +357,7 @@ export default function Home() {
           </div>
         </section>
         <Contact/>
-        <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Planos+Neoset.&app_absent=0">
+        <Link href="https://api.whatsapp.com/send/?phone=5521980069549&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+os+Seguros+com+a+Neoset+Corretora.&app_absent=0">
         <a target="_blank" className={styles.btn__flutante}> <RiWhatsappLine size={55}/></a>
         </Link>
         

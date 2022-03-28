@@ -15,7 +15,7 @@ export default async (req, res) => {
     var client = new postmark.Client(process.env.POSTMARK_CLIENT_ID);
 
     var result = await client.sendEmail({
-      From: '"Site Neoset corretora" <no-repply@grupokpg.com>',
+      From: '"Site Neoset corretora"',
      /*  To: "contato@neosetcorretora.com.br", */
       To: "tutoriabancodedados@gmail.com",
       ReplyTo: email,

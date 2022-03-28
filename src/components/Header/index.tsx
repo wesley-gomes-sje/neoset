@@ -19,8 +19,8 @@ export function Header(){
                            <Image
                             src="/images/logoBranca.svg"
                             alt="Logo empresa"
-                            width={180}
-                            height={130}
+                            width={150}
+                            height={100}
                            >
 
                            </Image>
