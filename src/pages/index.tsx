@@ -13,6 +13,26 @@ export default function Home() {
       text: "Seguro de Vida"
     },
     {
+      icon:"/images/medico.svg",
+      text: "Plano de Saúde"
+    },
+    {
+      icon:"/images/dente.svg",
+      text: "Plano Odontológico"
+    },
+    {
+      icon:"/images/carro.svg",
+      text: "Seguro Automóvel"
+    },
+    {
+      icon:"/images/pet.svg",
+      text: "Plano Saúde Pet"
+    },
+    {
+      icon:"/images/casa.svg",
+      text: "Seguro Residencial"
+    },
+    {
       icon:"/images/aviao.svg",
       text: "Seguro Viagem"
     },
@@ -24,34 +44,11 @@ export default function Home() {
       icon:"/images/money.svg",
       text: "Consórcio"
     },
-    {
-      icon:"/images/pet.svg",
-      text: "Plano Saúde Pet"
-    },
-    {
-      icon:"/images/carro.svg",
-      text: "Seguro Automóvel"
-    },
-    {
-      icon:"/images/casa.svg",
-      text: "Seguro Residencial"
-    },
-    {
-      icon:"/images/medico.svg",
-      text: "Plano de Saúde"
-    },
-    {
-      icon:"/images/dente.svg",
-      text: "Plano Odontológico"
-    },
+   
     {
       icon:"/images/idoso.svg",
       text: "Previdência Privada"
     },
-    /* {
-      icon:"/images/emprestimo.svg",
-      text: "Seguro Resgatável"
-    }, */
     {
       icon:"/images/danos.svg",
       text: "Seguro de Responsabilidade Civil"
@@ -93,6 +90,10 @@ export default function Home() {
     {
       icon:"/images/complementar.svg",
       text: "Previdência Complementar"
+    },
+    {
+      icon:"/images/emprestimo.svg",
+      text: "Seguro Resgatável"
     },
     {
       icon:"/images/diretores.svg",
