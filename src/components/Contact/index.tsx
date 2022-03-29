@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from './styles.module.scss';
 import swal from 'sweetalert';
 import { RiWhatsappLine } from "react-icons/ri";
+import InputMask from "react-input-mask";
 export function Contact(){
 
     function formCad(event) {
@@ -14,7 +15,6 @@ export function Contact(){
         const userName = data.get('name');
         const userPhone = data.get('telefone');
         const userEmail = data.get('email');
-        const userAssunto = data.get('assunto');
         const userMensagem = data.get('mensagem');
 
         fetch("http://localhost:3000/api/contato", {
@@ -27,7 +27,6 @@ export function Contact(){
                 nome: userName,
                 phone: userPhone,
                 email: userEmail,
-                assunto:userAssunto,
                 mensagem: userMensagem,
             }),
 
@@ -92,16 +91,16 @@ export function Contact(){
                             </div>
                             <div className={styles.group__form}>
                                 <label htmlFor="telefone"  className={styles.label}>Telefone</label>
-                                <input  className={styles.input} type="number" id='telefone' name='telefone' placeholder='Insira seu telefone com DDD' required/>
+                                <InputMask mask="(99) 99999-9999" className={styles.input} type="text" id='telefone' name='telefone' placeholder='Insira seu telefone com DDD' required/>
                             </div>
                             <div className={styles.group__form}>
                                 <label htmlFor="email"  className={styles.label}>Email</label>
                                 <input  className={styles.input} type="email" id='email' name='email' placeholder=' Ex: seunome@gmail.com' required/>
                             </div>
-                            <div className={styles.group__form}>
+                            {/* <div className={styles.group__form}>
                                 <label htmlFor="assunto"  className={styles.label}>Assunto</label>
                                 <input  className={styles.input} type="text" id='assunto' name='assunto' placeholder=' Digite o assunto' required/>
-                            </div>
+                            </div> */}
                             <div className={styles.group__form}>
                                 <label htmlFor="mensagem"  className={styles.label}>Mensagem</label>
                                 <textarea  className={styles.textarea} rows={3}  id='mensagem' name='mensagem' placeholder=' Escreva sua mensagem...'required></textarea>
