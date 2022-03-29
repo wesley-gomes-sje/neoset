@@ -2,7 +2,7 @@ import { useState} from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import styles from './styles.module.scss';
-import { useRouter } from 'next/router';
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { 
     RiCloseFill,
     RiMenuFill
@@ -34,9 +34,37 @@ export function Header(){
                                 </Link>
                             </li>
                             <li className={styles.nav__item}>
-                                <Link href="#you">
-                                    <a className={styles.nav__link}>Serviços</a>
-                                </Link>
+                                <a className={styles.nav__link}>
+                                    Serviços
+                                    <MdOutlineKeyboardArrowDown
+                                        size={25}
+                                        className={styles.nav__link__arrow}
+                                    />
+                                </a>
+                                <ul className={styles.nav__submenu}>
+                                    <li className={styles.nav__item__sub}>
+                                        <Link href="#you">
+                                        <a
+                                            onClick={() => {
+                                            setActiveMenu(false);
+                                            }}
+                                        >
+                                            Para Você
+                                        </a>
+                                        </Link>
+                                    </li>
+                                    <li className={styles.nav__item__sub}>
+                                        <Link href="#you">
+                                        <a
+                                            onClick={() => {
+                                            setActiveMenu(false);
+                                            }}
+                                        >
+                                            Para Sua Empresa
+                                        </a>
+                                        </Link>
+                                    </li>
+                                </ul>
                             </li>
                             <li className={styles.nav__item}>
                                 <Link href="#about">

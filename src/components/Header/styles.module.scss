@@ -5,7 +5,7 @@
 
 .header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: $z-fixed;
@@ -76,6 +76,34 @@
     display: none;
 }
 
+.nav__item {
+    .nav__submenu {
+      display: none;
+      position: absolute;
+      top: 4rem;
+      background-color: $first-color;
+      border-radius: 8px;
+  
+      .nav__item__sub {
+        padding: 1rem;
+  
+        a {
+          color: $second-color;
+          font-weight: 500;
+        }
+      }
+    }
+  
+    &:hover .nav__submenu {
+      display: block;
+    }
+  
+    &:hover .nav__link__arrow {
+      transform: rotate(180deg);
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
 /* MENU MOBIELE */
 
 @media screen  and (max-width:700px) {
@@ -114,6 +142,13 @@
         color: $second-color;
         cursor: pointer;
     }
+
+    .nav__item {
+        .nav__submenu {
+          position: relative;
+          top: unset;
+        }
+      }
     .nav__item a {
         font-size: 18px;
     }
@@ -133,6 +168,7 @@
     color: $text-color;
     font-size: $small-font-size;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .nav__close{
