@@ -1,13 +1,14 @@
 const nodemailer = require('nodemailer')
 export default function sendEmail(req, res){
     let transporter = nodemailer.createTransport({
-        host: 'smtp.uhserver.com',
-        port: 587,
+        host: 'smtps.uhserver.com',
+        port: 465,
         secure: false,
         auth: {
             user:process.env.USERMAIL,
             pass:process.env.PASSMAIL,
         },
+        tls: {rejectUnauthorized: false}
     })
 
     transporter.sendMail({
