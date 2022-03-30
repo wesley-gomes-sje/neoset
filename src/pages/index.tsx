@@ -128,7 +128,7 @@ export default function Home() {
   return (
     <>
        <Head>
-        <title>Neoset Corretora - A proteção que você merece</title>
+        <title>Neoset Corretora de Seguros - A proteção que você merece</title>
       </Head>
       <main>
         <section className={`${styles.home} section`}>
@@ -141,7 +141,7 @@ export default function Home() {
                 Proteção para <br /> você e sua família
               </h1>
               <p className={styles.home__subtitle}>
-                Com a <strong>Neoset Corretora</strong>, você tem proteção completa, para quem 
+                Com a <strong>Neoset Corretora de Seguros</strong>, você tem proteção completa, para quem 
                 realmente importa e para seu patrimônio.
               </p>
               <div className={`${styles.buttons} ${styles.active}`}>
@@ -307,7 +307,7 @@ export default function Home() {
                     className={styles.icon__about}
                   />
                   <p className={styles.about__p}>
-                    Recomendado por +3 Mil clientes
+                    Recomendado por +100 clientes
                   </p>
                 </div>
             </div>
