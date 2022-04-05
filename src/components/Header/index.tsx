@@ -54,7 +54,7 @@ export function Header(){
                                         </Link>
                                     </li>
                                     <li className={styles.nav__item__sub}>
-                                        <Link href="#you">
+                                        <Link href="#company">
                                         <a
                                             onClick={() => {
                                             setActiveMenu(false);

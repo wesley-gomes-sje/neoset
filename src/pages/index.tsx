@@ -151,8 +151,8 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link href="#company">
-                  <div className={styles.btn__segundo}>
-                    <a className={styles.btn__client}>Para sua Empresa</a>
+                  <div className={styles.btn}>
+                    <a className={styles.btn__budget}>Para sua Empresa</a>
                   </div>
                 </Link>
               </div>

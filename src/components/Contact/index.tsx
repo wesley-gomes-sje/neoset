@@ -17,7 +17,7 @@ export function Contact(){
         const userEmail = data.get('email');
         const userMensagem = data.get('mensagem');
 
-        fetch("http://localhost:3000/api/contato", {
+        fetch("http://localhost:3000/api/newcontact", {
             method: "POST",
             headers: {
                 Accept: "application/json, text/plain, */*",

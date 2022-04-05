@@ -67,7 +67,7 @@ export function Footer(){
 
                     <div className={styles.copy}>
                         <div className={styles.copy__text}>
-                            <span className={styles.span}>Feito com ❤ por <Link href="https://www.agenciawash.com.br/"><a target="_blank" className={styles.span}>agencia wash</a></Link></span>
+                            <span className={styles.span}>Feito com ❤ por <Link href="https://www.agenciawash.com.br/"><a target="_blank" className={styles.span}>Agência wash</a></Link></span>
                         </div>
                     </div>
                 </div>
